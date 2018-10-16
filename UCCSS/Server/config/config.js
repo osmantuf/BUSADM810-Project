@@ -7,6 +7,11 @@ var config = {
         app: { name: 'UCCSS' },
         port: 5000,
 },
+test: {
+    root: rootPath,
+    app: { name: 'UCCSS' },
+    port: 4000,
+},
     production: {
         root: rootPath,
         app: { name: 'UCCSS' },

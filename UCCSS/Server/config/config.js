@@ -4,18 +4,22 @@ var path = require('path'),
 var config = {
     development: {
         root: rootPath,
-        app: { name: 'UCCSS' },
+        app: {name: 'UCCSS'},
         port: 5000,
-},
-test: {
-    root: rootPath,
-    app: { name: 'UCCSS' },
-    port: 4000,
-},
+        db: 'mongodb://127.0.0.1/helpMe-dev'
+    },
+
+    test: {
+        root: rootPath,
+        app: { name: 'UCCSS' },
+        port: 4000,
+        db: 'mongodb://127.0.0.1/helpMe-dev'
+    },
     production: {
         root: rootPath,
         app: { name: 'UCCSS' },
-        port: 80, 
+        port: 80,
+        db: 'mongodb://127.0.0.1/helpMe-dev'
     }
 };
 module.exports = config[env];
